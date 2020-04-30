@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Module 2 solution</title>
+<style>
+	* {
+  	box-sizing: border-box;
+  	font-family: Helvetica;
+  }
+h1 {
+  margin-bottom: 15px;
+  font-size: 1.75em;
+  text-align: center;
+}
+
+p {
+  border: 1px solid black;
+  background-color: maroon;
+  text-align: left;
+  font-size: 1em;
+  height: 300px;
+  padding-top: 60px;
+  padding-left: 20px; 
+  padding-right: 20px; 
+  margin-right: 10px;
+  margin-left: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.row {
+  width: 100%;
+}
+/******title box******/
+.c1, .c2, .c3{
+	border: 2px solid black;
+  vertical-align: middle;
+	margin: 0px;
+	font-size: 1.25em;
+	font-weight: bold;
+  	height: 12%;
+  	width: 35%;
+  	position: absolute;
+  	bottom: 88%;
+  	left: 65%;
+text-align: center;
+padding-top:3px;
+}
+.c1{
+	background-color: blue;
+}
+.c2{
+	background-color:  green;
+}
+.c3{
+	
+	background-color: red;
+}
+/********** Desktop View **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+}
+
+/********** Tablet View **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  /*.col-md-12 {
+    width: 100%;
+  }*/
+}	
+
+/********** Mobile View **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+  }
+   .col-sm-12 {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+	<h1>OUR MENU</h1>
+	<div class="row">
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <p><span class="c1">SUMMER</span>Summer is the hottest of the four temperate seasons, falling after spring and before autumn. At or around the summer solstice, the earliest sunrise and latest sunset occurs, the days are longest and the nights are shortest, with day length decreasing as the season progresses after the solstice. The date of the beginning of summer varies according to climate, tradition, and culture. When it is summer in the Northern Hemisphere, it is winter in the Southern Hemisphere, and vice versa.
+</p></div>
+  <div class="col-lg-4 col-md-6 col-sm-12"><p><span class="c2">WINTER</span>
+  Winter is the coldest season of the year in polar and temperate zones (winter does not occur in most of the tropical zone). It occurs after autumn and before spring in each year. Winter is caused by the axis of the Earth in that hemisphere being oriented away from the Sun. Different cultures define different dates as the start of winter, and some use a definition based on weather. When it is winter in the Northern Hemisphere,</p></div>
+  <div class="col-lg-4 col-md-12 col-sm-12"><p><span class="c3">SPRING</span>Spring, also known as springtime, is one of the four temperate seasons, succeeding winter and preceding summer. There are various technical definitions of spring, but local usage of the term varies according to local climate, cultures and customs. When it is spring in the Northern Hemisphere, it is autumn in the Southern Hemisphere and vice versa. 
+  </p></div>
+</div>
+</body>
+</html>
